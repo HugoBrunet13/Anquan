@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/css/bootstrap.css";
+
+html, body {height: 100%;}
+
+body {padding: 0px; margin: 0px; font-size: 14px; font-family: 'Roboto', sans-serif; font-weight: 400; background: #f0f0f5;}
+body.login-bg {background: linear-gradient(to top right, rgba(255,82,99,0.9) 10%, rgba(255,115,129,0.9) 65%, rgba(252,189,1,0.9) 125%);}
+
+select::-ms-expand {display: none;}
+
+
+/* button */
+.btn {padding: 15px 50px; font-size: 14px; color: #fff; text-transform: uppercase; font-weight: 400; line-height: 1; border: 0px; border-radius: 50px; transition: all 0.5s;}
+.btn.btn-primary {background: #40E0D0; background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); background-size: 200%;}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:not(:disabled):not(.disabled):active:focus {box-shadow:0 0 10px rgba(0, 0, 0, 0.3); background-position: right center;}
+
+/* signup */
+.signup-bg {padding: 0px; margin: 0px;}
+.signup-bg .logo {padding: 0px; margin: 0px 0 30px; display: block;}
+.signup-bg .signup-boxs {padding: 0px; margin: 0px; display: block; border-radius: 5px; background: #fff; padding: 30px 40px;}
+.signup-bg .signup-boxs h3 {font-size: 36px; color: #000; font-weight: 300; margin: 0px 0 30px; display: block;}
+.signup-bg .signup-boxs p {font-size: 12px; color: #000; font-weight: 400; margin: 0px 0 25px; display: block;}
+
+
+/* leftnav */
+.leftnav {width: 200px; background: linear-gradient(to top right, rgba(255,82,99,0.9) 10%, rgba(255,115,129,0.9) 65%, rgba(252,189,1,0.9) 125%);}
+.leftnav.collapse {display: block; padding: 40px 0 0 0;}
+
+
+/* rightslider */
+.rightslider {width: calc(100% - 200px); padding: 30px 30px 0;}
+
+
+
+/* card */
+.card {border-color: #d7d7de;}
+.card .card-header {font-size: 24px; color: #4a4a4a; font-weight: 700; background: none;}
+
+/*Title case info employee*/
+.title_info_employee{ text-align: center; font-size: 18px; color: #4a4a4a; font-weight: 700; background: none;}
+
+/* Table info employee*/
+.table { border-radius: 5px; text-align: center; width: 80%; margin: 0px auto; float: none; }
+
+/* Responsive */
+
+@media(max-width:1200px) {
+  header.navbar .search-box {margin-left: 30px;}
+  header.navbar .settings {margin-right: 30px;}
+
+  .leftnav.collapse {padding: 20px 0 0 0;}
+  .leftnav ul li a {padding: 0px 0 0 26px;}
+  .leftnav ul li ul li a {padding: 0px 0 0 46px;}
+
+  .rightslider {padding: 20px 20px 0;}
+}
+
+@media(max-width:1023px) {
+  .card {margin-bottom: 20px;}
+  header.navbar .search-box {flex: 0 0 35%;}
+}
+
+@media(max-width:767px) {
+
+  body {overflow-x: hidden; padding-top: 45px;}
+
+  header.navbar {position: fixed; left: 0px; right: 0px; z-index: 2; top: 0;}
+  header.navbar .navbar-brand {width: auto; padding: 6px 0 6px 15px; border: 0px;}
+  header.navbar .settings {margin-right: 15px;}
+  header.navbar .navbar-toggler {padding: 0px; margin-right: 15px; background: #eb6234; border-radius: 0px;}
+
+  .leftnav {position: fixed; right: -200px; z-index: 2; transition: all 0.5s;}
+  .leftnav.collapse {display: block;}
+  .leftnav.collapsing {padding: 20px 0 0;}
+  .leftnav.collapse.show {display: block; right: 0;}
+  .rightslider {width: 100%;}
+}
+
+@media(max-width:480px) {
+
+  body {padding-top: 41px;}
+
+  header.navbar .navbar-brand {padding: 0px 0 0px 10px;}
+  header.navbar .navbar-brand img {height: 25px;}
+  header.navbar .search-box {margin-left: 15px; flex: 0 0 45%;}
+
+  .rightslider {padding: 15px;}
+
+}

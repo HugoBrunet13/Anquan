@@ -1,0 +1,108 @@
+
+<div class="d-flex flex-wrap h-100">
+  <nav class="leftnav collapse h-100" id="collapsibleNavbar">
+    <div class="logo text-center">
+      <img src="assets/images/logo.png">
+    </div>
+  </nav>
+
+  <div class="rightslider">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header d-flex flex-wrap">
+            <!-- Nav pills -->
+            {{employee.first_name}}&nbsp;{{employee.last_name}}
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <div class="title_info_employee">Working information</div>
+                <table class="table">
+                  <tbody>
+                  <tr>
+                    <td>Working address</td>
+                    <td>{{employee.work_address}}</td>
+                  </tr>
+                  <tr>
+                    <td>Work mobile</td>
+                    <td>{{employee.work_phone}}</td>
+                  </tr>
+                  <tr>
+                    <td>Work email</td>
+                    <td>{{employee.work_email}}</td>
+                  </tr>
+                  <tr>
+                    <td>Public info</td>
+                    <td>{{employee.public_info}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col">
+                <div class="title_info_employee">Position</div>
+                <table class="table">
+                  <tbody>
+                  <tr>
+                    <td>Department</td>
+                    <td>{{employee.department}}</td>
+                  </tr>
+                  <tr>
+                    <td>Job title</td>
+                    <td>{{employee.job_title}}</td>
+                  </tr>
+                  <tr>
+                    <td>Manager</td>
+                    <td>{{employee.manager}}</td>
+                  </tr>
+                  <tr>
+                    <td>Coach</td>
+                    <td>{{employee.coach}}</td>
+                  </tr>
+                  <tr>
+                    <td>Working time</td>
+                    <td>{{employee.working_time}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-6">
+                <div class="title_info_employee"> Personal information</div>
+                <table class="table">
+                  <tbody>
+                  <tr>
+                    <td>Age</td>
+                    <td>{{employee.age}}&nbsp;years old</td>
+                  </tr>
+                  <tr>
+                    <td>Address</td>
+                    <td>{{employee.address}}</td>
+                  </tr>
+                  <tr>
+                    <td>Phone</td>
+                    <td>{{employee.phone}}</td>
+                  </tr>
+                  <tr>
+                    <td>Public info</td>
+                    <td>{{employee.public_info}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col"></div>
+            </div>
+            <br>
+            <div class="form-row text-center">
+              <div class="col-12">
+                  <ngbd-collapse-basic></ngbd-collapse-basic>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
